@@ -1,0 +1,24 @@
+@font-face{
+    font-family: 'Akrobat';
+    src: url('../fonts/AKROBAT-REGULAR.otf');
+}
+
+@font-face{
+    font-family: 'Akrobat-light';
+    src: url('../fonts/AKROBAT-EXTRALIGHT.otf');
+}
+
+@font-face{
+    font-family: 'Akrobat-bold';
+    src: url('../fonts/AKROBAT-BOLD.otf');
+}
+
+@font-face{
+    font-family: 'Akrobat-semibold';
+    src: url('../fonts/AKROBAT-SEMIBOLD.otf');
+}
+
+@font-face{
+    font-family: 'Akrobat-extrabold';
+    src: url('../fonts/AKROBAT-EXTRABOLD.otf');
+}
