@@ -21,14 +21,14 @@ html, body {
     color: #403020;
 }
 
-input::-webkit-input-placeholder       {opacity: 1; color: #c2921d; font-size: 1.6rem; transition: opacity 0.3s ease;}
-input::-moz-placeholder                {opacity: 1; color: #c2921d; font-size: 1.6rem; transition: opacity 0.3s ease;}
-input:-moz-placeholder                 {opacity: 1; color: #c2921d; font-size: 1.6rem; transition: opacity 0.3s ease;}
-input:-ms-input-placeholder            {opacity: 1; color: #c2921d; font-size: 1.6rem; transition: opacity 0.3s ease;}
-input:focus::-webkit-input-placeholder {opacity: 0; color: #c2921d; font-size: 1.6rem; transition: opacity 0.3s ease;}
-input:focus::-moz-placeholder          {opacity: 0; color: #c2921d; font-size: 1.6rem; transition: opacity 0.3s ease;}
-input:focus:-moz-placeholder           {opacity: 0; color: #c2921d; font-size: 1.6rem; transition: opacity 0.3s ease;}
-input:focus:-ms-input-placeholder      {opacity: 0; color: #c2921d; font-size: 1.6rem; transition: opacity 0.3s ease;}
+input::-webkit-input-placeholder       {opacity: 1; color: #e4d6ab; font-size: 2.1rem; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; color: #e4d6ab; font-size: 2.1rem; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; color: #e4d6ab; font-size: 2.1rem; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; color: #e4d6ab; font-size: 2.1rem; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; color: #e4d6ab; font-size: 2.1rem; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; color: #e4d6ab; font-size: 2.1rem; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; color: #e4d6ab; font-size: 2.1rem; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; color: #e4d6ab; font-size: 2.1rem; transition: opacity 0.3s ease;}
 
 input:focus{
 	outline: none;
@@ -42,3 +42,145 @@ textarea:focus::-webkit-input-placeholder {opacity: 0; color: #e4d6ab; font-size
 textarea:focus::-moz-placeholder          {opacity: 0; color: #e4d6ab; font-size: 2.1rem; transition: opacity 0.3s ease;}
 textarea:focus:-moz-placeholder           {opacity: 0; color: #e4d6ab; font-size: 2.1rem; transition: opacity 0.3s ease;}
 textarea:focus:-ms-input-placeholder      {opacity: 0; color: #e4d6ab; font-size: 2.1rem; transition: opacity 0.3s ease;}
+
+.header {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+.logo {
+	display: inline-block;
+	margin: 1.5rem 3rem;
+}
+.logo-pic {
+	display: block;
+	width: 15rem;
+}
+.logo-txt {
+	font-size: 2.1rem;
+	color: #735a52;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.menu-lk {
+	position: relative;
+	display: inline-block;
+	margin: 0px 50px;
+	font: 2.1rem Akrobat-semibold, sans-serif;
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.menu-lk::before {
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: auto;
+	right: 0;
+	width: 0;
+	height: 2px;
+	background-color: #000;
+	transition: all .3s ease-out;
+}
+.menu-lk:hover::before {
+	right: auto;
+	left: 0;
+	width: 100%;
+}
+
+.menu-tel {
+	position: relative;
+	display: inline-block;
+	padding: 0 3rem 0 4rem;
+}
+.menu-tel::before {
+	content: '';
+	position: absolute;
+	top: .2rem;
+	left: 0;
+	width: 3.5rem;
+	height: 3.5rem;
+	background: url(../img/tel.svg) center;
+	background-size: cover;
+}
+.menu-tel-txt {
+	font: 2.8rem Akrobat-bold, sans-serif;
+	color: #000;
+	text-decoration: none;
+	pointer-events: none;
+}
+
+#main {
+	position: relative;
+	height: 100vh;
+	background: url(../img/bg-main.jpg) center;
+}
+
+.main-txt {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 5.5rem 25rem;
+	width: 100%;
+	background-color: rgba(37, 29, 25, .77);
+	font: 4.5rem Akrobat-extrabold, sans-serif;
+	color: #e4d6ab;
+	text-align: center;
+}
+.main-txt::before,
+.main-txt::after {
+	content: '“';
+	font: 40rem/38rem Akrobat, sans-serif;
+	position: absolute;
+	left: 11.5rem;
+	top: 0;
+	bottom: 0;
+}
+.main-txt::after {
+	content: '”';
+	left: auto;
+	right: 11.5rem;
+	transform: rotateY(180deg);
+}
+
+#why {
+	padding: 8rem 10rem;
+}
+
+.section-title {
+	font: 3.9rem Akrobat-extrabold, sans-serif;
+	color: #403020;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.why {
+	display: flex;
+	justify-content: space-between;
+}
+
+.why-item::not(:last-child) {
+	margin-right: 7.5rem;
+}
+
+.why-ico {
+	width: 14rem;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1390px) {
+	html, body {
+		font-size: 7px;
+	}
+}
