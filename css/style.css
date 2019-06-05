@@ -545,6 +545,9 @@ textarea {
 	#contacts .section-title {
 		text-align: center;
 	}
+	input {
+		width: 100%;
+	}
 	input[type="submit"] {
 		display: block;
 		margin: auto;
