@@ -529,6 +529,10 @@ textarea {
 		font-size: 3rem;
 	}
 
+	.faq-question::before {
+		left: -2rem;
+	}
+
 	#contacts {
 		display: block;
 	}
